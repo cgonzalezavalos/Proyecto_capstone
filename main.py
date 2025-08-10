@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 import pandas as pd
+import uvicorn
 
 # Cargar el modelo y el scaler desde los archivos .pkl
 with open('Archivos_PKL/RandomForestReg_GS.pkl', 'rb') as archivo_modelo:
@@ -49,3 +50,6 @@ async def predecir_recuperacion(transaccion: Transaccion):
         return resultado
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+    
+    if __name__ == "__main__":
+        uvicorn.run(app, port=8080,host="0.0.0.0")
