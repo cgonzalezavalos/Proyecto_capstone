@@ -12,3 +12,5 @@ Archivos_PKL_Contrafactual/
 EDA.py
 lectura_PKL.py
 datos/
+modelo_*
+.vscode/
