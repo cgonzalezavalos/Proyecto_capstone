@@ -6,3 +6,8 @@ __pycache__/
 *.ipynb_checkpoints
 *.csv
 *.xlsx
+notebooks/
+Archivos_PKL_Clasificacion/
+Archivos_PKL_Contrafactual/
+EDA.py
+lectura_PKL.py
